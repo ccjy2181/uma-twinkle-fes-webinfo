@@ -53,6 +53,16 @@ function toCode(line, number) {
   return `${line}${number}`;
 }
 
+function isBoothInfoRegistered(booth) {
+  return Boolean(
+    (booth.info && booth.info.trim()) ||
+      (booth.character && booth.character.length > 0) ||
+      (booth.images && booth.images.length > 0) ||
+      booth.links?.twitter ||
+      booth.links?.pixiv
+  );
+}
+
 function normalizeList(value) {
   if (Array.isArray(value)) {
     return value.map((item) => String(item).trim()).filter(Boolean);
@@ -205,7 +215,7 @@ function fullLayoutBooths() {
 }
 
 function makeMapSlot(booth, top, left, width, height) {
-  const isUnregistered = booth.name === "미등록 부스";
+  const isUnregistered = !isBoothInfoRegistered(booth);
   const slot = document.createElement("button");
   slot.type = "button";
   slot.className = "map-slot";
@@ -300,16 +310,14 @@ function renderBooths(list) {
       rowList.className = "line-row";
 
       booths.slice(i, i + LIST_ROW_BREAK).forEach((booth) => {
-        const isUnregistered = booth.name === "미등록 부스";
+        const isUnregistered = !isBoothInfoRegistered(booth);
         const item = document.createElement("button");
         item.type = "button";
         item.className = "line-booth-btn";
         if (isUnregistered) {
           item.classList.add("line-booth-unregistered");
         }
-        item.innerHTML = isUnregistered
-          ? `<span class="line-code">${booth.code}</span><span class="line-name"></span>`
-          : `<span class="line-code">${booth.code}</span><span class="line-name">${booth.name}</span>`;
+        item.innerHTML = `<span class="line-code">${booth.code}</span><span class="line-name">${booth.name}</span>`;
         item.addEventListener("click", () => {
           openModal(booth);
         });
