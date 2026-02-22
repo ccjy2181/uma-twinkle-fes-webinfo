@@ -460,11 +460,19 @@ body {
   display: grid;
   grid-template-columns: 60px minmax(0, 1fr) 60px;
   gap: 8px;
-  align-items: center;
+  align-items: stretch;
 }
 
 .modal-gallery.single-image {
   grid-template-columns: minmax(0, 1fr);
+}
+
+.gallery-frame {
+  height: min(72vh, 560px);
+  overflow: auto;
+  border-radius: 10px;
+  border: 1px solid #d9ccb8;
+  background: #fff;
 }
 
 .gallery-btn {
@@ -483,12 +491,9 @@ body {
 }
 
 .gallery-image {
+  display: block;
   width: 100%;
-  max-height: min(72vh, 560px);
-  object-fit: contain;
-  border-radius: 10px;
-  border: 1px solid #d9ccb8;
-  background: #fff;
+  height: auto;
 }
 
 .gallery-counter {
