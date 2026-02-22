@@ -235,7 +235,7 @@ function makeMapSlot(booth, top, left, width, height) {
 
   if (currentFilteredCodes.size > 0) {
     if (currentFilteredCodes.has(booth.code)) {
-      slot.classList.add("slot-match");
+      slot.classList.add(isUnregistered ? "slot-match-unregistered" : "slot-match-registered");
     } else {
       slot.classList.add("slot-dim");
     }

@@ -234,7 +234,7 @@ body {
   color: #526272;
 }
 
-.slot-match {
+.slot-match-registered {
   border-color: #ff5a2f;
   background: #ffd8cd;
   color: #8a1c00;
@@ -242,8 +242,20 @@ body {
   z-index: 2;
 }
 
-.slot-match span {
+.slot-match-registered span {
   color: #8a1c00;
+}
+
+.slot-match-unregistered {
+  border-color: #415f83;
+  background: #d2deed;
+  color: #2b435f;
+  box-shadow: 0 0 0 3px rgba(65, 95, 131, 0.32), 0 8px 18px rgba(65, 95, 131, 0.28);
+  z-index: 2;
+}
+
+.slot-match-unregistered span {
+  color: #2b435f;
 }
 
 .slot-dim {
