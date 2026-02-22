@@ -203,7 +203,7 @@ body {
   position: absolute;
   border: 1px solid #e38f1f;
   border-radius: 8px;
-  background: rgba(254, 234, 187, 0.88);
+  background: #feeabb;
   color: #d84e36;
   display: flex;
   align-items: center;
@@ -228,7 +228,7 @@ body {
 }
 
 .slot-empty {
-  background: rgba(224, 229, 236, 0.9);
+  background: #dfe6ef;
   border-style: solid;
   border-color: #9ca9b8;
   color: #526272;
@@ -236,7 +236,7 @@ body {
 
 .slot-match {
   border-color: #ff5a2f;
-  background: rgba(255, 224, 214, 0.95);
+  background: #ffd8cd;
   color: #8a1c00;
   box-shadow: 0 0 0 3px rgba(255, 90, 47, 0.35), 0 8px 20px rgba(255, 90, 47, 0.35);
   z-index: 2;
@@ -247,8 +247,11 @@ body {
 }
 
 .slot-dim {
-  filter: grayscale(0.45) brightness(0.9);
-  opacity: 0.58;
+  filter: none;
+  background: #ececec;
+  border-color: #c6c6c6;
+  color: #7a7a7a;
+  box-shadow: none;
 }
 
 .booth-grid {
