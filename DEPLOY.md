@@ -24,16 +24,16 @@ git remote set-url origin https://<GITHUB_USERNAME>:<PAT>@github.com/ccjy2181/um
 4. Save
 
 ## 3) Custom domain
-- `CNAME` file is already included with `uma.kirius.kr`
-- In Pages settings, set custom domain to `uma.kirius.kr`
+- `CNAME` file is already included with `umatwinklefes.kro.kr`
+- In Pages settings, set custom domain to `umatwinklefes.kro.kr`
 
 DNS examples:
-- For apex domain (`uma.kirius.kr`) -> `A` records to GitHub Pages IPs:
+- For apex domain (`umatwinklefes.kro.kr`) -> `A` records to GitHub Pages IPs:
   - `185.199.108.153`
   - `185.199.109.153`
   - `185.199.110.153`
   - `185.199.111.153`
 - If using subdomain style with CNAME support from DNS provider:
-  - `uma.kirius.kr CNAME ccjy2181.github.io`
+  - `umatwinklefes.kro.kr CNAME ccjy2181.github.io`
 
 After DNS propagation, HTTPS can be enabled in Pages.

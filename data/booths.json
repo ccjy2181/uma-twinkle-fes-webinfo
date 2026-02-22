@@ -46,11 +46,13 @@
   {
     "code": "A5",
     "name": "벌꿀당근",
-    "info": "",
-    "character": [],
+    "info": "토카이 테이오 ONLY 부스입니다!",
+    "character": [
+      "토카이 테이오"
+    ],
     "images": [],
     "links": {
-      "twitter": "",
+      "twitter": "https://x.com/SPakkyu845",
       "pixiv": ""
     }
   },
@@ -189,11 +191,13 @@
   {
     "code": "C4",
     "name": "네이처가 너무 귀여워!",
-    "info": "",
-    "character": [],
+    "info": "메이드 카페 컨셉의 나이스 네이처 위주 부스입니다. 우마우마",
+    "character": [
+      "나이스 네이처"
+    ],
     "images": [],
     "links": {
-      "twitter": "",
+      "twitter": "https://x.com/jjamponshojo",
       "pixiv": ""
     }
   },
@@ -244,14 +248,16 @@
   {
     "code": "D4",
     "name": "말딸 기어 솔리드",
-    "info": "※게임 메탈기어솔리드3(델타)에서 등장하는 말을 우마무스메화해본 작품입니다. ※우마무스메 프리티더비 캐릭터는 등장하지 않습니다.",
+    "info": "게임 메탈기어솔리드3(델타)에서 등장하는 말을 우마무스메화.",
     "character": [
       "안달루시안(우마무스메화)"
     ],
-    "images": [],
+    "images": [
+      "./assets/booths/D4_1.webp"
+    ],
     "links": {
       "twitter": "https://x.com/whatis0226",
-      "pixiv": "https://www.pixiv.net/users/2243267"
+      "pixiv": ""
     }
   },
   {
