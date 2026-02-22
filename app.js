@@ -54,8 +54,10 @@ function toCode(line, number) {
 }
 
 function isBoothInfoRegistered(booth) {
+  const hasRealInfo =
+    booth.info && booth.info.trim() && booth.info.trim() !== DEFAULT_INFO;
   return Boolean(
-    (booth.info && booth.info.trim()) ||
+    hasRealInfo ||
       (booth.character && booth.character.length > 0) ||
       (booth.images && booth.images.length > 0) ||
       booth.links?.twitter ||
@@ -87,7 +89,7 @@ function normalizeBooth(raw) {
   return {
     code,
     name: String(raw.name || "미등록 부스"),
-    info: String(raw.info || DEFAULT_INFO),
+    info: String(raw.info || "").trim(),
     character,
     images,
     links: {
@@ -361,7 +363,7 @@ function makeLinkButton(platform, href) {
 function openModal(booth) {
   modalCode.textContent = booth.code;
   modalName.textContent = booth.name;
-  modalInfo.textContent = booth.info;
+  modalInfo.textContent = booth.info || DEFAULT_INFO;
 
   modalCharacters.innerHTML = "";
   if (booth.character.length > 0) {
