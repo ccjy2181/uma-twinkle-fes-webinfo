@@ -205,6 +205,7 @@ function fullLayoutBooths() {
 }
 
 function makeMapSlot(booth, top, left, width, height) {
+  const isUnregistered = booth.name === "미등록 부스";
   const slot = document.createElement("button");
   slot.type = "button";
   slot.className = "map-slot";
@@ -216,7 +217,7 @@ function makeMapSlot(booth, top, left, width, height) {
   slot.innerHTML = `<span>${booth.code}</span>`;
   slot.title = booth.name;
 
-  if (booth.name === "미등록 부스") {
+  if (isUnregistered) {
     slot.classList.add("slot-empty");
   }
 
@@ -299,10 +300,16 @@ function renderBooths(list) {
       rowList.className = "line-row";
 
       booths.slice(i, i + LIST_ROW_BREAK).forEach((booth) => {
+        const isUnregistered = booth.name === "미등록 부스";
         const item = document.createElement("button");
         item.type = "button";
         item.className = "line-booth-btn";
-        item.innerHTML = `<span class="line-code">${booth.code}</span><span class="line-name">${booth.name}</span>`;
+        if (isUnregistered) {
+          item.classList.add("line-booth-unregistered");
+        }
+        item.innerHTML = isUnregistered
+          ? `<span class="line-code">${booth.code}</span><span class="line-name"></span>`
+          : `<span class="line-code">${booth.code}</span><span class="line-name">${booth.name}</span>`;
         item.addEventListener("click", () => {
           openModal(booth);
         });

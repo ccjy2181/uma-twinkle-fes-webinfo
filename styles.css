@@ -208,6 +208,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
@@ -227,9 +228,10 @@ body {
 }
 
 .slot-empty {
-  background: rgba(241, 241, 241, 0.8);
-  border-style: dashed;
-  color: #777;
+  background: rgba(224, 229, 236, 0.9);
+  border-style: solid;
+  border-color: #9ca9b8;
+  color: #526272;
 }
 
 .slot-match {
@@ -302,6 +304,15 @@ body {
 .line-name {
   font-size: 15px;
   line-height: 1.2;
+}
+
+.line-booth-unregistered {
+  background: #edf1f6;
+  border-color: #b9c4d0;
+}
+
+.line-booth-unregistered .line-code {
+  color: #5a6d83;
 }
 
 .booth-card {
