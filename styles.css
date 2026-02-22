@@ -235,14 +235,20 @@ body {
 }
 
 .slot-match {
-  border-color: #06756b;
-  background: rgba(186, 245, 236, 0.9);
-  color: #05544d;
-  box-shadow: 0 0 0 2px rgba(6, 117, 107, 0.28), 0 7px 18px rgba(6, 117, 107, 0.3);
+  border-color: #ff5a2f;
+  background: rgba(255, 224, 214, 0.95);
+  color: #8a1c00;
+  box-shadow: 0 0 0 3px rgba(255, 90, 47, 0.35), 0 8px 20px rgba(255, 90, 47, 0.35);
+  z-index: 2;
+}
+
+.slot-match span {
+  color: #8a1c00;
 }
 
 .slot-dim {
-  filter: grayscale(0.25) brightness(0.96);
+  filter: grayscale(0.45) brightness(0.9);
+  opacity: 0.58;
 }
 
 .booth-grid {
