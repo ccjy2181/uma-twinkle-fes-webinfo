@@ -34,7 +34,9 @@
       "키타산 블랙",
       "사토노 다이아몬드"
     ],
-    "images": [],
+    "images": [
+      "./assets/booths/A2_1.webp"
+    ],
     "links": {
       "twitter": "https://x.com/HDochi_W",
       "pixiv": ""
