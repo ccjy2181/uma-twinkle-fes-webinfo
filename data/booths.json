@@ -223,9 +223,16 @@
       "나이스 네이처",
       "마치카네 후쿠키타루",
       "오구리 캡",
-      "타마모 크로스"
+      "타마모 크로스",
+      "골드쉽",
+      "다이타쿠 헬리오스",
+      "라이스 샤워",
+      "마치카네 탄호이저",
+      "아그네스 타키온"
     ],
-    "images": [],
+    "images": [
+      "./assets/booths/C4_1.webp"
+    ],
     "links": {
       "twitter": "https://x.com/jjamponshojo",
       "pixiv": ""
@@ -326,12 +333,25 @@
   {
     "code": "E3",
     "name": "모르모트의 감자밭",
-    "info": "",
-    "character": [],
-    "images": [],
+    "info": "우마무스메 개그 4컷 만화 회지 판매합니다.",
+    "character": [
+      "아그네스 타키온",
+      "맨하탄 카페",
+      "스테이 골드",
+      "골드 쉽",
+      "오르페브르",
+      "나카야마 페스타",
+      "드림 저니",
+      "페노메노",
+      "젠틸돈나",
+      "베르시나(비르시나)"
+    ],
+    "images": [
+      "./assets/booths/E3_1.webp"
+    ],
     "links": {
-      "twitter": "",
-      "pixiv": ""
+      "twitter": "https://x.com/pot8oG",
+      "pixiv": "https://www.pixiv.net/users/5314341"
     }
   },
   {
@@ -370,11 +390,22 @@
   {
     "code": "F2",
     "name": "모두 모자를 쓰자",
-    "info": "",
-    "character": [],
+    "info": "JAMD위주 만화 회지+99키캡, 각종 아크릴 굿즈 예정",
+    "character": [
+      "맨하탄 카페",
+      "아그네스 타키온",
+      "티엠 오페라 오",
+      "메이쇼 도토",
+      "나리타 탑 로드",
+      "어드마이어 베가",
+      "키세키",
+      "아그네스 디지털",
+      "메지로 도베르",
+      "크로노 제네시스"
+    ],
     "images": [],
     "links": {
-      "twitter": "",
+      "twitter": "https://x.com/hipposoul",
       "pixiv": ""
     }
   },
