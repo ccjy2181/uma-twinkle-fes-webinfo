@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>우마무스메 트윙클 페스티벌 2026 웹 인포</title>
+    <meta
+      name="description"
+      content="2026년 3월 7일 개최 우마무스메 트윙클 페스티벌 비공식 웹 인포"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-a" aria-hidden="true"></div>
+    <div class="bg-orb orb-b" aria-hidden="true"></div>
+
+    <header class="hero">
+      <div class="hero-banner" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-logo-wrap">
+          <img
+            class="hero-logo"
+            src="UTF_inv_new.webp"
+            alt="우마무스메 트윙클 페스티벌 로고"
+            onerror="this.onerror=null;this.src='UTF_inv_new.png';"
+          />
+        </div>
+        <div class="hero-text">
+          <h1>우마무스메 트윙클 페스티벌</h1>
+          <p class="event-date">행사일: 2026년 3월 7일 (토)</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="controls" aria-label="부스 필터">
+        <label for="searchInput">부스명/키워드 검색</label>
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="예: 골드쉽, 키링, 스티커"
+          autocomplete="off"
+        />
+      </section>
+
+      <section class="map-wrap" aria-label="부스 배치도">
+        <div class="map-header">
+          <h2>부스 배치도</h2>
+          <p>라인 A~G / 클릭 시 모달 상세보기</p>
+        </div>
+        <div id="boothMap" class="booth-map"></div>
+      </section>
+
+      <section class="list-wrap" aria-label="부스 목록">
+        <div class="map-header">
+          <h2>부스 목록</h2>
+          <p>검색어 입력 시 목록과 배치도가 함께 필터됩니다.</p>
+        </div>
+        <div id="boothGrid" class="booth-grid"></div>
+      </section>
+    </main>
+
+    <dialog id="boothModal" class="booth-modal">
+      <article class="modal-content">
+        <button id="closeModalBtn" class="close-btn" type="button" aria-label="닫기">
+          ×
+        </button>
+        <p id="modalCode" class="modal-code"></p>
+        <h2 id="modalName"></h2>
+        <p id="modalInfo" class="modal-info"></p>
+        <div id="modalCharacters" class="modal-characters"></div>
+        <div id="modalGallery" class="modal-gallery">
+          <button id="modalPrevImageBtn" type="button" class="gallery-btn">이전</button>
+          <img id="modalGalleryImage" class="gallery-image" alt="" />
+          <button id="modalNextImageBtn" type="button" class="gallery-btn">다음</button>
+        </div>
+        <p id="modalGalleryCounter" class="gallery-counter"></p>
+
+        <div id="modalLinks" class="modal-links"></div>
+      </article>
+    </dialog>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>

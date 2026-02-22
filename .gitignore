@@ -1,0 +1,11 @@
+# local/tmp artifacts
+crop_*.png
+booths-source.jpg
+
+# optional local exports
+data/booths.source.csv
+data/booths-progress.csv
+
+# OS/editor
+.DS_Store
+Thumbs.db
