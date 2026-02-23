@@ -379,7 +379,7 @@ body {
   border: none;
   padding: 0;
   background: transparent;
-  max-width: min(680px, calc(100vw - 24px));
+  max-width: min(900px, calc(100vw - 24px));
 }
 
 .booth-modal::backdrop {
@@ -469,12 +469,12 @@ body {
 
 .modal-gallery.single-image .gallery-frame {
   height: auto;
-  max-height: min(72vh, 560px);
+  max-height: min(78vh, 720px);
   overflow: auto;
 }
 
 .gallery-frame {
-  height: min(72vh, 560px);
+  height: min(78vh, 720px);
   overflow: auto;
   border-radius: 10px;
   border: 1px solid #d9ccb8;
@@ -566,6 +566,18 @@ body {
 }
 
 @media (max-width: 780px) {
+  .booth-modal {
+    max-width: min(680px, calc(100vw - 24px));
+  }
+
+  .modal-gallery.single-image .gallery-frame {
+    max-height: min(72vh, 560px);
+  }
+
+  .gallery-frame {
+    height: min(72vh, 560px);
+  }
+
   .hero-content {
     grid-template-columns: 1fr;
     gap: 12px;
