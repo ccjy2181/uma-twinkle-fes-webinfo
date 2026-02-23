@@ -60,8 +60,8 @@ function isBoothInfoRegistered(booth) {
     hasRealInfo ||
       (booth.character && booth.character.length > 0) ||
       (booth.images && booth.images.length > 0) ||
-      booth.links?.twitter ||
-      booth.links?.pixiv
+      (booth.links?.twitter && booth.links.twitter.length > 0) ||
+      (booth.links?.pixiv && booth.links.pixiv.length > 0)
   );
 }
 
@@ -73,6 +73,15 @@ function normalizeList(value) {
     .split(/[|,，]/)
     .map((item) => item.trim())
     .filter(Boolean);
+}
+
+function extractUrls(value) {
+  if (Array.isArray(value)) {
+    return [...new Set(value.flatMap((item) => extractUrls(item)))];
+  }
+  const text = String(value || "");
+  const matches = text.match(/https?:\/\/[^\s|,]+/g);
+  return matches ? [...new Set(matches)] : [];
 }
 
 function normalizeBooth(raw) {
@@ -93,8 +102,8 @@ function normalizeBooth(raw) {
     character,
     images,
     links: {
-      twitter: raw.links?.twitter || raw.twitter || "",
-      pixiv: raw.links?.pixiv || raw.pixiv || "",
+      twitter: extractUrls(raw.links?.twitter || raw.twitter || ""),
+      pixiv: extractUrls(raw.links?.pixiv || raw.pixiv || ""),
     },
   };
 }
@@ -199,8 +208,8 @@ function createFallbackBooth(code) {
     character: [],
     images: [],
     links: {
-      twitter: "",
-      pixiv: "",
+      twitter: [],
+      pixiv: [],
     },
   };
 }
@@ -334,7 +343,7 @@ function renderBooths(list) {
   });
 }
 
-function makeLinkButton(platform, href) {
+function makeLinkButton(platform, href, index = 0, total = 1) {
   const label = platform === "twitter" ? "트위터/X" : "픽시브";
   const faviconUrl =
     platform === "twitter"
@@ -354,7 +363,7 @@ function makeLinkButton(platform, href) {
   icon.height = 18;
 
   const text = document.createElement("span");
-  text.textContent = label;
+  text.textContent = total > 1 ? `${label} ${index + 1}` : label;
 
   anchor.append(icon, text);
   return anchor;
@@ -397,14 +406,14 @@ function openModal(booth) {
   }
 
   modalLinks.innerHTML = "";
-  if (booth.links.twitter) {
-    modalLinks.append(makeLinkButton("twitter", booth.links.twitter));
-  }
-  if (booth.links.pixiv) {
-    modalLinks.append(makeLinkButton("pixiv", booth.links.pixiv));
-  }
+  booth.links.twitter.forEach((href, index) => {
+    modalLinks.append(makeLinkButton("twitter", href, index, booth.links.twitter.length));
+  });
+  booth.links.pixiv.forEach((href, index) => {
+    modalLinks.append(makeLinkButton("pixiv", href, index, booth.links.pixiv.length));
+  });
 
-  if (!booth.links.twitter && !booth.links.pixiv) {
+  if (booth.links.twitter.length === 0 && booth.links.pixiv.length === 0) {
     const p = document.createElement("p");
     p.className = "modal-no-links";
     p.textContent = "SNS 링크 미등록";
@@ -450,8 +459,8 @@ function filterBooths(keyword) {
       booth.name,
       booth.info,
       ...booth.character,
-      booth.links.twitter,
-      booth.links.pixiv,
+      ...booth.links.twitter,
+      ...booth.links.pixiv,
     ]
       .join(" ")
       .toLowerCase();

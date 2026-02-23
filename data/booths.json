@@ -6,8 +6,8 @@
     "character": [],
     "images": [],
     "links": {
-      "twitter": "",
-      "pixiv": ""
+      "twitter": [],
+      "pixiv": []
     }
   },
   {
@@ -38,8 +38,10 @@
       "./assets/booths/A2_1.webp"
     ],
     "links": {
-      "twitter": "https://x.com/HDochi_W",
-      "pixiv": ""
+      "twitter": [
+        "https://x.com/HDochi_W"
+      ],
+      "pixiv": []
     }
   },
   {
@@ -49,8 +51,8 @@
     "character": [],
     "images": [],
     "links": {
-      "twitter": "",
-      "pixiv": ""
+      "twitter": [],
+      "pixiv": []
     }
   },
   {
@@ -66,8 +68,10 @@
     ],
     "images": [],
     "links": {
-      "twitter": "https://x.com/tomadoci",
-      "pixiv": ""
+      "twitter": [
+        "https://x.com/tomadoci"
+      ],
+      "pixiv": []
     }
   },
   {
@@ -79,8 +83,10 @@
     ],
     "images": [],
     "links": {
-      "twitter": "https://x.com/SPakkyu845",
-      "pixiv": ""
+      "twitter": [
+        "https://x.com/SPakkyu845"
+      ],
+      "pixiv": []
     }
   },
   {
@@ -90,8 +96,8 @@
     "character": [],
     "images": [],
     "links": {
-      "twitter": "",
-      "pixiv": ""
+      "twitter": [],
+      "pixiv": []
     }
   },
   {
@@ -101,8 +107,8 @@
     "character": [],
     "images": [],
     "links": {
-      "twitter": "",
-      "pixiv": ""
+      "twitter": [],
+      "pixiv": []
     }
   },
   {
@@ -112,10 +118,14 @@
     "character": [
       "사쿠라 바쿠신 오"
     ],
-    "images": [],
+    "images": [
+      "./assets/booths/A8_1.webp"
+    ],
     "links": {
-      "twitter": "https://x.com/LookSeeWatch1",
-      "pixiv": ""
+      "twitter": [
+        "https://x.com/LookSeeWatch1"
+      ],
+      "pixiv": []
     }
   },
   {
@@ -125,8 +135,8 @@
     "character": [],
     "images": [],
     "links": {
-      "twitter": "",
-      "pixiv": ""
+      "twitter": [],
+      "pixiv": []
     }
   },
   {
@@ -140,8 +150,10 @@
     ],
     "images": [],
     "links": {
-      "twitter": "https://x.com/Se_ra_B",
-      "pixiv": ""
+      "twitter": [
+        "https://x.com/Se_ra_B"
+      ],
+      "pixiv": []
     }
   },
   {
@@ -151,8 +163,8 @@
     "character": [],
     "images": [],
     "links": {
-      "twitter": "",
-      "pixiv": ""
+      "twitter": [],
+      "pixiv": []
     }
   },
   {
@@ -162,8 +174,8 @@
     "character": [],
     "images": [],
     "links": {
-      "twitter": "",
-      "pixiv": ""
+      "twitter": [],
+      "pixiv": []
     }
   },
   {
@@ -173,8 +185,8 @@
     "character": [],
     "images": [],
     "links": {
-      "twitter": "",
-      "pixiv": ""
+      "twitter": [],
+      "pixiv": []
     }
   },
   {
@@ -190,8 +202,8 @@
     ],
     "images": [],
     "links": {
-      "twitter": "",
-      "pixiv": ""
+      "twitter": [],
+      "pixiv": []
     }
   },
   {
@@ -201,8 +213,8 @@
     "character": [],
     "images": [],
     "links": {
-      "twitter": "",
-      "pixiv": ""
+      "twitter": [],
+      "pixiv": []
     }
   },
   {
@@ -219,8 +231,12 @@
     ],
     "images": [],
     "links": {
-      "twitter": "https://x.com/_pikiju",
-      "pixiv": "https://www.pixiv.net/users/2164044"
+      "twitter": [
+        "https://x.com/_pikiju"
+      ],
+      "pixiv": [
+        "https://www.pixiv.net/users/2164044"
+      ]
     }
   },
   {
@@ -230,8 +246,8 @@
     "character": [],
     "images": [],
     "links": {
-      "twitter": "",
-      "pixiv": ""
+      "twitter": [],
+      "pixiv": []
     }
   },
   {
@@ -253,8 +269,10 @@
       "./assets/booths/C4_1.webp"
     ],
     "links": {
-      "twitter": "https://x.com/jjamponshojo",
-      "pixiv": ""
+      "twitter": [
+        "https://x.com/jjamponshojo"
+      ],
+      "pixiv": []
     }
   },
   {
@@ -278,8 +296,12 @@
     ],
     "images": [],
     "links": {
-      "twitter": "https://x.com/shironism",
-      "pixiv": "https://www.pixiv.net/users/96712948"
+      "twitter": [
+        "https://x.com/shironism"
+      ],
+      "pixiv": [
+        "https://www.pixiv.net/users/96712948"
+      ]
     }
   },
   {
@@ -289,8 +311,8 @@
     "character": [],
     "images": [],
     "links": {
-      "twitter": "",
-      "pixiv": ""
+      "twitter": [],
+      "pixiv": []
     }
   },
   {
@@ -300,8 +322,8 @@
     "character": [],
     "images": [],
     "links": {
-      "twitter": "",
-      "pixiv": ""
+      "twitter": [],
+      "pixiv": []
     }
   },
   {
@@ -311,8 +333,8 @@
     "character": [],
     "images": [],
     "links": {
-      "twitter": "",
-      "pixiv": ""
+      "twitter": [],
+      "pixiv": []
     }
   },
   {
@@ -326,8 +348,10 @@
       "./assets/booths/D4_1.webp"
     ],
     "links": {
-      "twitter": "https://x.com/whatis0226",
-      "pixiv": ""
+      "twitter": [
+        "https://x.com/whatis0226"
+      ],
+      "pixiv": []
     }
   },
   {
@@ -454,8 +478,12 @@
     ],
     "images": [],
     "links": {
-      "twitter": "https://x.com/dx_nuf",
-      "pixiv": "https://www.pixiv.net/users/9355981"
+      "twitter": [
+        "https://x.com/dx_nuf"
+      ],
+      "pixiv": [
+        "https://www.pixiv.net/users/9355981"
+      ]
     }
   },
   {
@@ -467,8 +495,10 @@
     ],
     "images": [],
     "links": {
-      "twitter": "https://x.com/BRDROT",
-      "pixiv": ""
+      "twitter": [
+        "https://x.com/BRDROT"
+      ],
+      "pixiv": []
     }
   },
   {
@@ -478,8 +508,8 @@
     "character": [],
     "images": [],
     "links": {
-      "twitter": "",
-      "pixiv": ""
+      "twitter": [],
+      "pixiv": []
     }
   },
   {
@@ -502,8 +532,12 @@
       "./assets/booths/E3_1.webp"
     ],
     "links": {
-      "twitter": "https://x.com/pot8oG",
-      "pixiv": "https://www.pixiv.net/users/5314341"
+      "twitter": [
+        "https://x.com/pot8oG"
+      ],
+      "pixiv": [
+        "https://www.pixiv.net/users/5314341"
+      ]
     }
   },
   {
@@ -513,8 +547,8 @@
     "character": [],
     "images": [],
     "links": {
-      "twitter": "",
-      "pixiv": ""
+      "twitter": [],
+      "pixiv": []
     }
   },
   {
@@ -524,8 +558,8 @@
     "character": [],
     "images": [],
     "links": {
-      "twitter": "",
-      "pixiv": ""
+      "twitter": [],
+      "pixiv": []
     }
   },
   {
@@ -535,8 +569,8 @@
     "character": [],
     "images": [],
     "links": {
-      "twitter": "",
-      "pixiv": ""
+      "twitter": [],
+      "pixiv": []
     }
   },
   {
@@ -557,8 +591,11 @@
     ],
     "images": [],
     "links": {
-      "twitter": "https://x.com/hipposoul",
-      "pixiv": ""
+      "twitter": [
+        "https://x.com/hipposoul",
+        "https://x.com/onsil9"
+      ],
+      "pixiv": []
     }
   },
   {
@@ -568,8 +605,8 @@
     "character": [],
     "images": [],
     "links": {
-      "twitter": "",
-      "pixiv": ""
+      "twitter": [],
+      "pixiv": []
     }
   },
   {
@@ -581,8 +618,10 @@
     ],
     "images": [],
     "links": {
-      "twitter": "https://x.com/JAZZ_JACK_",
-      "pixiv": ""
+      "twitter": [
+        "https://x.com/JAZZ_JACK_"
+      ],
+      "pixiv": []
     }
   },
   {
@@ -592,8 +631,12 @@
     "character": [],
     "images": [],
     "links": {
-      "twitter": "https://x.com/Seemyu_0430",
-      "pixiv": "https://www.pixiv.net/users/31376476"
+      "twitter": [
+        "https://x.com/Seemyu_0430"
+      ],
+      "pixiv": [
+        "https://www.pixiv.net/users/31376476"
+      ]
     }
   }
 ]
