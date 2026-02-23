@@ -108,11 +108,15 @@
   {
     "code": "A8",
     "name": "위원장의 은밀한 취미",
-    "info": "",
-    "character": [],
-    "images": [],
+    "info": "아무도 시킨 적 없는 박신 깎는 부스",
+    "character": [
+      "사쿠라 바쿠신 오"
+    ],
+    "images": [
+      "https://drive.google.com/file/d/1A0vRGVxBGHDpa8RR1E2yMe5b3euXKZpU/view?usp=sharing"
+    ],
     "links": {
-      "twitter": "",
+      "twitter": "https://x.com/LookSeeWatch1",
       "pixiv": ""
     }
   },
@@ -258,12 +262,26 @@
   {
     "code": "C5",
     "name": "SHIRONISM",
-    "info": "",
-    "character": [],
+    "info": "일러스트북 판매하고 있습니다.",
+    "character": [
+      "슈가 라이츠",
+      "아이네스 후진",
+      "애스턴 마짱",
+      "사토노 크라운",
+      "노른 에이스",
+      "럭키 라일락",
+      "다이타쿠 헬리오스",
+      "아그네스 디지털",
+      "스테이 골드",
+      "토카이 테이오",
+      "칼스톤 라이트 오",
+      "마치카네 탄호이저",
+      "마르슈 로렌"
+    ],
     "images": [],
     "links": {
-      "twitter": "",
-      "pixiv": ""
+      "twitter": "https://x.com/shironism",
+      "pixiv": "https://www.pixiv.net/users/96712948"
     }
   },
   {
