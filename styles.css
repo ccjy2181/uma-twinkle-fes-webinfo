@@ -458,21 +458,19 @@ body {
 .modal-gallery {
   margin-top: 12px;
   display: grid;
+  grid-template-columns: 60px minmax(0, 1fr) 60px;
   gap: 8px;
+  align-items: stretch;
 }
 
 .modal-gallery.single-image {
-  gap: 0;
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .modal-gallery.single-image .gallery-frame {
   height: auto;
   max-height: min(78vh, 720px);
   overflow: auto;
-}
-
-.modal-gallery.single-image .gallery-nav {
-  display: none;
 }
 
 .gallery-frame {
@@ -483,22 +481,14 @@ body {
   background: #fff;
 }
 
-.gallery-nav {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
 .gallery-btn {
   border: 1px solid var(--line);
   background: #fff;
   border-radius: 10px;
-  min-width: 52px;
-  height: 38px;
-  font-size: 20px;
+  height: 42px;
+  font-size: 13px;
   font-weight: 700;
   cursor: pointer;
-  line-height: 1;
 }
 
 .gallery-btn:disabled {
