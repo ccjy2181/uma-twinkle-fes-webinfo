@@ -76,11 +76,17 @@
         <p id="modalInfo" class="modal-info"></p>
         <div id="modalCharacters" class="modal-characters"></div>
         <div id="modalGallery" class="modal-gallery">
-          <button id="modalPrevImageBtn" type="button" class="gallery-btn">이전</button>
           <div class="gallery-frame">
             <img id="modalGalleryImage" class="gallery-image" alt="" />
           </div>
-          <button id="modalNextImageBtn" type="button" class="gallery-btn">다음</button>
+          <div class="gallery-nav">
+            <button id="modalPrevImageBtn" type="button" class="gallery-btn" aria-label="이전 이미지">
+              ←
+            </button>
+            <button id="modalNextImageBtn" type="button" class="gallery-btn" aria-label="다음 이미지">
+              →
+            </button>
+          </div>
         </div>
         <p id="modalGalleryCounter" class="gallery-counter"></p>
 
