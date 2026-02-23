@@ -467,6 +467,12 @@ body {
   grid-template-columns: minmax(0, 1fr);
 }
 
+.modal-gallery.single-image .gallery-frame {
+  height: auto;
+  max-height: min(72vh, 560px);
+  overflow: auto;
+}
+
 .gallery-frame {
   height: min(72vh, 560px);
   overflow: auto;
