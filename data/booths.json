@@ -340,8 +340,10 @@
   {
     "code": "D3",
     "name": "VRX 작업장",
-    "info": "",
-    "character": [],
+    "info": "중국에서 온 동아리입니다! 아무래도 불편한 점이 많을 수 있겠지만, 잘 부탁드립니다!",
+    "character": [
+      "러브즈 온리 유"
+    ],
     "images": [],
     "links": {
       "twitter": [],
@@ -612,7 +614,7 @@
   {
     "code": "F3",
     "name": "Secondary Dominant",
-    "info": "",
+    "info": "어레인지 앨범, 포토카드, 키링등의 굿즈 판매 예정",
     "character": [],
     "images": [],
     "links": {
