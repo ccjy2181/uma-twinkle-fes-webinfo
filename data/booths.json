@@ -55,12 +55,23 @@
   {
     "code": "A3",
     "name": "타키키팔레트",
-    "info": "",
-    "character": [],
-    "images": [],
+    "info": "우마무스메 팬 만화 및 굿즈",
+    "character": [
+      "메지로도베르 등 다수"
+    ],
+    "images": [
+      "./assets/booths/A3_1.webp",
+      "./assets/booths/A3_2.webp",
+      "./assets/booths/A3_3.webp",
+      "./assets/booths/A3_4.webp"
+    ],
     "links": {
-      "twitter": [],
-      "pixiv": []
+      "twitter": [
+        "https://x.com/Takiki2828kr"
+      ],
+      "pixiv": [
+        "https://www.pixiv.net/users/60386498"
+      ]
     }
   },
   {
