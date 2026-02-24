@@ -316,7 +316,9 @@
       "마치카네 탄호이저",
       "마르슈 로렌"
     ],
-    "images": [],
+    "images": [
+      "./assets/booths/C5_1.webp"
+    ],
     "links": {
       "twitter": [
         "https://x.com/shironism"
@@ -626,7 +628,20 @@
     "code": "F3",
     "name": "Secondary Dominant",
     "info": "어레인지 앨범, 포토카드, 키링등의 굿즈 판매 예정",
-    "character": [],
+    "character": [
+      "아그네스 타키온",
+      "정글 포켓",
+      "오구리 캡",
+      "심볼리 루돌프",
+      "시리우스 심볼리",
+      "나리타 탑로드",
+      "티엠 오페라 오",
+      "메이쇼 도토",
+      "빅투아르 피사",
+      "어드마이어 그루브",
+      "페노메노",
+      "로즈 킹덤"
+    ],
     "images": [],
     "links": {
       "twitter": [],
