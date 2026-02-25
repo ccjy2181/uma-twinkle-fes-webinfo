@@ -341,7 +341,9 @@
       "마야노 탑건",
       "다이와 스칼렛"
     ],
-    "images": [],
+    "images": [
+      "./assets/booths/D1_1.webp"
+    ],
     "links": {
       "twitter": [
         "https://x.com/povertyisabusee"
