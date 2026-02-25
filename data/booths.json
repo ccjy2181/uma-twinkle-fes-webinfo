@@ -203,12 +203,21 @@
   {
     "code": "B5",
     "name": "당근",
-    "info": "",
-    "character": [],
-    "images": [],
+    "info": "10T아크릴 코롯토, 아크릴 키링, 포토카드, 스티커",
+    "character": [
+      "키타산블랙 등 다수"
+    ],
+    "images": [
+      "./assets/booths/B5_1.webp",
+      "./assets/booths/B5_2.webp"
+    ],
     "links": {
-      "twitter": [],
-      "pixiv": []
+      "twitter": [
+        "https://x.com/BNeoul"
+      ],
+      "pixiv": [
+        "https://www.pixiv.net/users/19374218"
+      ]
     }
   },
   {
