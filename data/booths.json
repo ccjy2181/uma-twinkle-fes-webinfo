@@ -551,8 +551,11 @@
   {
     "code": "E2",
     "name": "KOTOHANABI",
-    "info": "",
-    "character": [],
+    "info": "JAMD, RTTT 위주 굿즈",
+    "character": [
+      "정글포켓",
+      "나리타탑로드"
+    ],
     "images": [],
     "links": {
       "twitter": [],
