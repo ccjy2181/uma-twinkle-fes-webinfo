@@ -331,11 +331,21 @@
   {
     "code": "D1",
     "name": "기니",
-    "info": "",
-    "character": [],
+    "info": "스티커, 잡지 컨셉의 포스터 및 아크릴 스탠드 판매 예정입니다 ^_^",
+    "character": [
+      "메이쇼 도토",
+      "맨하탄 카페",
+      "마루젠스키",
+      "라이스 샤워",
+      "페노메노",
+      "마야노 탑건",
+      "다이와 스칼렛"
+    ],
     "images": [],
     "links": {
-      "twitter": [],
+      "twitter": [
+        "https://x.com/povertyisabusee"
+      ],
       "pixiv": []
     }
   },
