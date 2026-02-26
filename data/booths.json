@@ -153,9 +153,34 @@
   {
     "code": "B1",
     "name": "팔코의 흙장난",
-    "info": "",
-    "character": [],
-    "images": [],
+    "info": "안녕하세여 팔코 마니마니 좋아해여 우리 팔코 많이 좋아해주세여",
+    "character": [
+      "스마트 팔콘",
+      "다이와 스칼렛",
+      "마야노 탑건",
+      "라이스 샤워",
+      "골드 쉽",
+      "원더 어큐트",
+      "아그네스 디지털",
+      "애스턴 마쨩",
+      "카렌쨩",
+      "코파노 리키",
+      "홋코 타루마에",
+      "하루 우라라",
+      "오구리 캡",
+      "다이이치 루비",
+      "젠틸돈나",
+      "맨하탄 카페",
+      "비블로스",
+      "카렌 부케도르",
+      "슈퍼 크릭",
+      "메지로 맥퀸"
+    ],
+    "images": [
+      "./assets/booths/B1_1.webp",
+      "./assets/booths/B1_2.webp",
+      "./assets/booths/B1_3.webp"
+    ],
     "links": {
       "twitter": [],
       "pixiv": []
@@ -268,7 +293,12 @@
       "골드 쉽",
       "페노메노"
     ],
-    "images": [],
+    "images": [
+      "./assets/booths/C2_1.webp",
+      "./assets/booths/C2_2.webp",
+      "./assets/booths/C2_3.webp",
+      "./assets/booths/C2_4.webp"
+    ],
     "links": {
       "twitter": [
         "https://x.com/_pikiju"
@@ -689,7 +719,9 @@
     "character": [
       "골드쉽"
     ],
-    "images": [],
+    "images": [
+      "./assets/booths/G1_1.webp"
+    ],
     "links": {
       "twitter": [
         "https://x.com/JAZZ_JACK_"
