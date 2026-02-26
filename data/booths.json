@@ -125,11 +125,17 @@
   {
     "code": "A7",
     "name": "인터넷의 아틀리에",
-    "info": "",
-    "character": [],
-    "images": [],
+    "info": "우마무스메 2차창작 4컷 만화책",
+    "character": [
+      "슈발그랑"
+    ],
+    "images": [
+      "./assets/booths/A7_1.webp"
+    ],
     "links": {
-      "twitter": [],
+      "twitter": [
+        "https://twitter.com/1_netnet"
+      ],
       "pixiv": []
     }
   },
@@ -704,7 +710,8 @@
       "빅투아르 피사",
       "어드마이어 그루브",
       "페노메노",
-      "로즈 킹덤"
+      "로즈 킹덤",
+      "아몬드 아이"
     ],
     "images": [],
     "links": {
