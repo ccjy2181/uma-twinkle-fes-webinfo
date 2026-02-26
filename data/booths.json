@@ -181,11 +181,19 @@
   {
     "code": "B3",
     "name": "겁쟁이 토레나들의 쉼터",
-    "info": "",
-    "character": [],
-    "images": [],
+    "info": "트레이닝 다이와, 비브3자매 커스텀 수영복 등의 아크릴 굿즈를 판매 합니다!",
+    "character": [
+      "세자리오",
+      "다이와 스칼렛"
+    ],
+    "images": [
+      "./assets/booths/B3_1.webp"
+    ],
     "links": {
-      "twitter": [],
+      "twitter": [
+        "https://x.com/km19500",
+        "https://x.com/kasei_ovo"
+      ],
       "pixiv": []
     }
   },
@@ -558,7 +566,9 @@
     ],
     "images": [],
     "links": {
-      "twitter": [],
+      "twitter": [
+        "https://x.com/koto_umamm"
+      ],
       "pixiv": []
     }
   },
