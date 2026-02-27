@@ -231,12 +231,24 @@
   {
     "code": "B4",
     "name": "트레센학원 요이토마케 동호회",
-    "info": "",
-    "character": [],
-    "images": [],
+    "info": "요이토마케를 아주 좋아하는 홋코 타루마에와 극장판조 및 좋아하는 말딸들을 굿즈로 팔고 있습니다. 아크릴 키링 / 스탠드 / 안경수건 / 포토카드&엽서 / 일러스트북",
+    "character": [
+      "정글 포켓",
+      "홋코 타루마에",
+      "히시 아케보노",
+      "다이이치 루비",
+      "히시 미라클"
+    ],
+    "images": [
+      "./assets/booths/B4_1.webp"
+    ],
     "links": {
-      "twitter": [],
-      "pixiv": []
+      "twitter": [
+        "https://x.com/GrimmYhiji"
+      ],
+      "pixiv": [
+        "https://www.pixiv.net/users/13934827"
+      ]
     }
   },
   {
