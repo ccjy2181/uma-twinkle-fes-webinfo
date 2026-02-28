@@ -577,9 +577,21 @@
       "러브즈 온리 유",
       "크로노 제네시스",
       "카렌 부케도르",
-      "스테이 골드"
+      "스테이 골드",
+      "포에버 영"
     ],
-    "images": [],
+    "images": [
+      "./assets/booths/D5_1.webp",
+      "./assets/booths/D5_2.webp",
+      "./assets/booths/D5_3.webp",
+      "./assets/booths/D5_4.webp",
+      "./assets/booths/D5_5.webp",
+      "./assets/booths/D5_6.webp",
+      "./assets/booths/D5_7.webp",
+      "./assets/booths/D5_8.webp",
+      "./assets/booths/D5_9.webp",
+      "./assets/booths/D5_10.webp"
+    ],
     "links": {
       "twitter": [
         "https://x.com/dx_nuf"
