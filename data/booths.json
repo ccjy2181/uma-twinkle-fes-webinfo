@@ -419,11 +419,18 @@
   {
     "code": "D2",
     "name": "쿠소문학회",
-    "info": "",
+    "info": "고려대학교 비공식 소모임 서클입니다! 회지 중신으로 취급하며 점점 성장해가고 있으니 많은 관심 부탁드려요~",
     "character": [],
-    "images": [],
+    "images": [
+      "./assets/booths/D2_1.webp",
+      "./assets/booths/D2_2.webp",
+      "./assets/booths/D2_3.webp",
+      "./assets/booths/D2_4.webp"
+    ],
     "links": {
-      "twitter": [],
+      "twitter": [
+        "https://x.com/KUsobookclub"
+      ],
       "pixiv": []
     }
   },
@@ -696,9 +703,8 @@
   {
     "code": "F2",
     "name": "모두 모자를 쓰자",
-    "info": "JAMD위주 만화 회지+99키캡, 각종 아크릴 굿즈 예정",
+    "info": "타키온 야광아크릴,99키캡, 합쉬다 아크릴 스탠드 판매 예정입니다!",
     "character": [
-      "맨하탄 카페",
       "아그네스 타키온",
       "티엠 오페라 오",
       "메이쇼 도토",
@@ -735,11 +741,14 @@
       "어드마이어 그루브",
       "페노메노",
       "로즈 킹덤",
-      "아몬드 아이"
+      "아몬드 아이",
+      "라이스 샤워"
     ],
     "images": [],
     "links": {
-      "twitter": [],
+      "twitter": [
+        "https://x.com/loverscirno"
+      ],
       "pixiv": []
     }
   },
