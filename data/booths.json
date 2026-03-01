@@ -626,7 +626,7 @@
   {
     "code": "E2",
     "name": "KOTOHANABI",
-    "info": "JAMD, RTTT 위주 굿즈",
+    "info": "RTTT, JAMD 위주 굿즈 / 우마무스메 아크릴키링 판매합니다",
     "character": [
       "정글포켓",
       "나리타탑로드"
@@ -634,7 +634,8 @@
     "images": [],
     "links": {
       "twitter": [
-        "https://x.com/koto_umamm"
+        "https://x.com/koto_umamm",
+        "https://x.com/Sion_ara_uma"
       ],
       "pixiv": []
     }
@@ -670,11 +671,18 @@
   {
     "code": "E4",
     "name": "01년산 정글 바게트",
-    "info": "",
-    "character": [],
-    "images": [],
+    "info": "포케타키는 사랑을 하고 있다고",
+    "character": [
+      "정글 포켓",
+      "아그네스 타키온"
+    ],
+    "images": [
+      "./assets/booths/E4_1.webp"
+    ],
     "links": {
-      "twitter": [],
+      "twitter": [
+        "https://x.com/2_TP_S"
+      ],
       "pixiv": []
     }
   },
