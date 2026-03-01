@@ -814,8 +814,13 @@
     "code": "G2",
     "name": "우마무스메 잡화점",
     "info": "",
-    "character": [],
-    "images": [],
+    "character": [
+      "비블로스",
+      "아몬드아이"
+    ],
+    "images": [
+      "./assets/booths/G2_1.webp"
+    ],
     "links": {
       "twitter": [
         "https://x.com/Seemyu_0430"
