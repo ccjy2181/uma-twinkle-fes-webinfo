@@ -631,7 +631,11 @@
       "정글포켓",
       "나리타탑로드"
     ],
-    "images": [],
+    "images": [
+      "./assets/booths/E2_1.webp",
+      "./assets/booths/E2_2.webp",
+      "./assets/booths/E2_3.webp"
+    ],
     "links": {
       "twitter": [
         "https://x.com/koto_umamm",
