@@ -365,7 +365,9 @@
       "맨하탄 카페",
       "단츠 플레임"
     ],
-    "images": [],
+    "images": [
+      "./assets/booths/C3_1.webp"
+    ],
     "links": {
       "twitter": [
         "https://x.com/Oourpeace975"
