@@ -472,7 +472,9 @@
     "character": [
       "러브즈 온리 유"
     ],
-    "images": [],
+    "images": [
+      "./assets/booths/D3_1.webp"
+    ],
     "links": {
       "twitter": [],
       "pixiv": []
