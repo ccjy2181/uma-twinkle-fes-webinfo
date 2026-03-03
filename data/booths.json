@@ -444,7 +444,9 @@
       "twitter": [
         "https://x.com/povertyisabusee"
       ],
-      "pixiv": []
+      "pixiv": [
+        "https://x.com/meettheton"
+      ]
     }
   },
   {
@@ -737,9 +739,12 @@
   {
     "code": "F1",
     "name": "그러니까 내 말이",
-    "info": "",
+    "info": "우마무스메 엽서, 스티커 판매합니다.",
     "character": [],
-    "images": [],
+    "images": [
+      "./assets/booths/F1_1.webp",
+      "./assets/booths/F1_2.webp"
+    ],
     "links": {
       "twitter": [],
       "pixiv": []
