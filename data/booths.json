@@ -686,7 +686,10 @@
     "images": [
       "./assets/booths/E2_1.webp",
       "./assets/booths/E2_2.webp",
-      "./assets/booths/E2_3.webp"
+      "./assets/booths/E2_3.webp",
+      "./assets/booths/E2_4.webp",
+      "./assets/booths/E2_5.webp",
+      "./assets/booths/E2_6.webp"
     ],
     "links": {
       "twitter": [
