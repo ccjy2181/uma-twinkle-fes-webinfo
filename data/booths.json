@@ -663,11 +663,13 @@
   {
     "code": "E1",
     "name": "당근맛빵",
-    "info": "카츠라기 에이스 드림 회지 발매 예정",
+    "info": "우마무스메 게릴라 리퀘스트",
     "character": [
-      "카츠라기 에이스"
+      "카츠라기 에이스 외"
     ],
-    "images": [],
+    "images": [
+      "./assets/booths/E1_1.webp"
+    ],
     "links": {
       "twitter": [
         "https://x.com/BRDROT"
@@ -748,11 +750,17 @@
   {
     "code": "E5",
     "name": "황금산 트레이너실",
-    "info": "",
-    "character": [],
-    "images": [],
+    "info": "타키트레 논CP 시리즈물",
+    "character": [
+      "아그네스 타키온"
+    ],
+    "images": [
+      "./assets/booths/E5_1.webp"
+    ],
     "links": {
-      "twitter": [],
+      "twitter": [
+        "https://x.com/Ecryle"
+      ],
       "pixiv": []
     }
   },
