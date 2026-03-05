@@ -324,7 +324,13 @@
       "오르페브르",
       "페노메노"
     ],
-    "images": [],
+    "images": [
+      "./assets/booths/C1_1.webp",
+      "./assets/booths/C1_2.webp",
+      "./assets/booths/C1_3.webp",
+      "./assets/booths/C1_4.webp",
+      "./assets/booths/C1_5.webp"
+    ],
     "links": {
       "twitter": [
         "https://x.com/TCYKICON"
