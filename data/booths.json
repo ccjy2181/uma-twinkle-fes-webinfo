@@ -86,7 +86,10 @@
       "오구리캡",
       "타마모크로스"
     ],
-    "images": [],
+    "images": [
+      "./assets/booths/A4_1.webp",
+      "./assets/booths/A4_2.webp"
+    ],
     "links": {
       "twitter": [
         "https://x.com/tomadoci"
@@ -290,7 +293,9 @@
       "다이이치 루비",
       "다이타쿠 헬리오스"
     ],
-    "images": [],
+    "images": [
+      "./assets/booths/B6_1.webp"
+    ],
     "links": {
       "twitter": [],
       "pixiv": []
