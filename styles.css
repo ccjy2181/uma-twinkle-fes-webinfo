@@ -572,7 +572,7 @@ body {
   font-size: 13px;
 }
 
-.modal-links a {
+.social-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -584,28 +584,32 @@ body {
   background: #fff;
   color: var(--ink);
   font-weight: 700;
-}
-
-.modal-links a:hover {
-  border-color: var(--accent);
-  color: var(--accent-strong);
-}
-
-.social-link {
   min-height: 38px;
 }
 
+.social-link:hover,
+.social-link:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent-strong);
+  outline: none;
+}
+
 .witchform-link {
-  border-color: #2f7f50;
-  background: #e8fff0;
-  color: #0d5f2a;
+  min-height: 48px;
+  padding: 12px 18px;
+  font-size: 15px;
+  border-color: #1d7a45;
+  background: #dff9e9;
+  color: #0a5a2e;
+  box-shadow: 0 6px 14px rgba(29, 122, 69, 0.2);
 }
 
 .witchform-link:hover,
 .witchform-link:focus-visible {
-  border-color: #1f643c;
-  background: #d9f8e4;
-  color: #0d5f2a;
+  border-color: #125932;
+  background: #c8f2d8;
+  color: #094826;
+  box-shadow: 0 8px 18px rgba(29, 122, 69, 0.3);
 }
 
 .social-icon {
