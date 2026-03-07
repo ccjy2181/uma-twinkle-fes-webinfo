@@ -424,6 +424,17 @@ body {
   font-family: "Do Hyeon", sans-serif;
 }
 
+.modal-witchform {
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.modal-witchform[hidden] {
+  display: none;
+}
+
 .modal-info {
   margin: 0;
   color: var(--ink-soft);
@@ -582,6 +593,19 @@ body {
 
 .social-link {
   min-height: 38px;
+}
+
+.witchform-link {
+  border-color: #2f7f50;
+  background: #e8fff0;
+  color: #0d5f2a;
+}
+
+.witchform-link:hover,
+.witchform-link:focus-visible {
+  border-color: #1f643c;
+  background: #d9f8e4;
+  color: #0d5f2a;
 }
 
 .social-icon {

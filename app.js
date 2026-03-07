@@ -36,6 +36,7 @@ const modalNextImageBtn = document.getElementById("modalNextImageBtn");
 
 const modalCode = document.getElementById("modalCode");
 const modalName = document.getElementById("modalName");
+const modalWitchform = document.getElementById("modalWitchform");
 const modalInfo = document.getElementById("modalInfo");
 const modalCharacters = document.getElementById("modalCharacters");
 const modalGallery = document.getElementById("modalGallery");
@@ -61,7 +62,8 @@ function isBoothInfoRegistered(booth) {
       (booth.character && booth.character.length > 0) ||
       (booth.images && booth.images.length > 0) ||
       (booth.links?.twitter && booth.links.twitter.length > 0) ||
-      (booth.links?.pixiv && booth.links.pixiv.length > 0)
+      (booth.links?.pixiv && booth.links.pixiv.length > 0) ||
+      (booth.links?.witchform && booth.links.witchform.length > 0)
   );
 }
 
@@ -104,6 +106,7 @@ function normalizeBooth(raw) {
     links: {
       twitter: extractUrls(raw.links?.twitter || raw.twitter || ""),
       pixiv: extractUrls(raw.links?.pixiv || raw.pixiv || ""),
+      witchform: extractUrls(raw.links?.witchform || raw.witchform || ""),
     },
   };
 }
@@ -133,6 +136,7 @@ function parseCsv(text) {
       images: row.images,
       twitter: row.twitter,
       pixiv: row.pixiv,
+      witchform: row.witchform,
     };
   });
 }
@@ -210,6 +214,7 @@ function createFallbackBooth(code) {
     links: {
       twitter: [],
       pixiv: [],
+      witchform: [],
     },
   };
 }
@@ -344,11 +349,18 @@ function renderBooths(list) {
 }
 
 function makeLinkButton(platform, href, index = 0, total = 1) {
-  const label = platform === "twitter" ? "트위터/X" : "픽시브";
-  const faviconUrl =
-    platform === "twitter"
-      ? "https://www.google.com/s2/favicons?sz=64&domain_url=https://x.com"
-      : "https://www.google.com/s2/favicons?sz=64&domain_url=https://www.pixiv.net";
+  const labels = {
+    twitter: "트위터/X",
+    pixiv: "픽시브",
+    witchform: "윗치폼 통판",
+  };
+  const faviconUrls = {
+    twitter: "https://www.google.com/s2/favicons?sz=64&domain_url=https://x.com",
+    pixiv: "https://www.google.com/s2/favicons?sz=64&domain_url=https://www.pixiv.net",
+    witchform: "https://www.google.com/s2/favicons?sz=64&domain_url=https://witchform.com",
+  };
+  const label = labels[platform] || platform;
+  const faviconUrl = faviconUrls[platform] || "";
   const anchor = document.createElement("a");
   anchor.className = "social-link";
   anchor.href = href;
@@ -412,8 +424,27 @@ function openModal(booth) {
   booth.links.pixiv.forEach((href, index) => {
     modalLinks.append(makeLinkButton("pixiv", href, index, booth.links.pixiv.length));
   });
+  modalWitchform.innerHTML = "";
+  if (booth.links.witchform.length > 0) {
+    booth.links.witchform.forEach((href, index) => {
+      const button = makeLinkButton(
+        "witchform",
+        href,
+        index,
+        booth.links.witchform.length
+      );
+      button.classList.add("witchform-link");
+      modalWitchform.append(button);
+    });
+    modalWitchform.hidden = false;
+  } else {
+    modalWitchform.hidden = true;
+  }
 
-  if (booth.links.twitter.length === 0 && booth.links.pixiv.length === 0) {
+  if (
+    booth.links.twitter.length === 0 &&
+    booth.links.pixiv.length === 0
+  ) {
     const p = document.createElement("p");
     p.className = "modal-no-links";
     p.textContent = "SNS 링크 미등록";
@@ -461,6 +492,7 @@ function filterBooths(keyword) {
       ...booth.character,
       ...booth.links.twitter,
       ...booth.links.pixiv,
+      ...booth.links.witchform,
     ]
       .join(" ")
       .toLowerCase();
