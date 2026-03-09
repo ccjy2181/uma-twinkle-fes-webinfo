@@ -67,6 +67,10 @@ function isBoothInfoRegistered(booth) {
   );
 }
 
+function hasWitchformLink(booth) {
+  return Boolean(booth.links?.witchform && booth.links.witchform.length > 0);
+}
+
 function normalizeList(value) {
   if (Array.isArray(value)) {
     return value.map((item) => String(item).trim()).filter(Boolean);
@@ -232,6 +236,7 @@ function fullLayoutBooths() {
 
 function makeMapSlot(booth, top, left, width, height) {
   const isUnregistered = !isBoothInfoRegistered(booth);
+  const hasWitchform = hasWitchformLink(booth);
   const slot = document.createElement("button");
   slot.type = "button";
   slot.className = "map-slot";
@@ -245,6 +250,10 @@ function makeMapSlot(booth, top, left, width, height) {
 
   if (isUnregistered) {
     slot.classList.add("slot-empty");
+  }
+
+  if (hasWitchform) {
+    slot.classList.add("slot-witchform");
   }
 
   if (currentFilteredCodes.size > 0) {
@@ -327,13 +336,17 @@ function renderBooths(list) {
 
       booths.slice(i, i + LIST_ROW_BREAK).forEach((booth) => {
         const isUnregistered = !isBoothInfoRegistered(booth);
+        const hasWitchform = hasWitchformLink(booth);
         const item = document.createElement("button");
         item.type = "button";
         item.className = "line-booth-btn";
         if (isUnregistered) {
           item.classList.add("line-booth-unregistered");
         }
-        item.innerHTML = `<span class="line-code">${booth.code}</span><span class="line-name">${booth.name}</span>`;
+        if (hasWitchform) {
+          item.classList.add("line-booth-witchform");
+        }
+        item.innerHTML = `<span class="line-code">${booth.code}</span><span class="line-name">${booth.name}</span>${hasWitchform ? '<span class="line-tag">통판</span>' : ""}`;
         item.addEventListener("click", () => {
           openModal(booth);
         });

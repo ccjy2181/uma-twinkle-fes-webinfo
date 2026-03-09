@@ -234,6 +234,16 @@ body {
   color: #526272;
 }
 
+.slot-witchform {
+  border-color: #2f7f50;
+  background: #dff9e9;
+  color: #0f5f31;
+}
+
+.slot-witchform span {
+  color: #0f5f31;
+}
+
 .slot-match-registered {
   border-color: #ff5a2f;
   background: #ffd8cd;
@@ -334,6 +344,31 @@ body {
 
 .line-booth-unregistered .line-code {
   color: #5a6d83;
+}
+
+.line-booth-witchform {
+  border-color: #9ecfb0;
+  background: #f1fff6;
+}
+
+.line-booth-witchform:hover,
+.line-booth-witchform:focus-visible {
+  border-color: #4f9d6d;
+  box-shadow: 0 6px 14px rgba(27, 117, 63, 0.16);
+}
+
+.line-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  color: #0e5a2e;
+  background: #d6f5e2;
+  border: 1px solid #9bd1b1;
 }
 
 .booth-card {
