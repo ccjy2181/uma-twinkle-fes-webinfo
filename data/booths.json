@@ -7,7 +7,7 @@
       "심볼리 루돌프"
     ],
     "images": [
-      "https://drive.google.com/file/d/1JikLwavAob3TUY21FIsNYJ6DWj0WQNAi/view?usp=sharing"
+      "./assets/booths/A1_1.webp"
     ],
     "links": {
       "twitter": [
@@ -49,8 +49,8 @@
       "나이스 네이처"
     ],
     "images": [
-      "https://drive.google.com/file/d/1sZEZWuTTkD-cdyMSUgneYkNmMZZHVTRI/view?usp=sharing",
-      "https://drive.google.com/file/d/1KoHdrPiBu5Ee4DvuurlYvsX4mwWbl8G2/view?usp=sharing"
+      "./assets/booths/A2_1.webp",
+      "./assets/booths/A2_2.webp"
     ],
     "links": {
       "twitter": [
@@ -68,7 +68,10 @@
       "메지로도베르 등 다수"
     ],
     "images": [
-      "https://x.com/Takiki2828kr/status/2026195133054775510?s=20"
+      "./assets/booths/A3_1.webp",
+      "./assets/booths/A3_2.webp",
+      "./assets/booths/A3_3.webp",
+      "./assets/booths/A3_4.webp"
     ],
     "links": {
       "twitter": [
@@ -93,7 +96,8 @@
       "타마모크로스"
     ],
     "images": [
-      "https://drive.google.com/drive/folders/1UBaY8xPQY0CKFGewIgGqsgFQGzPpiYxV?usp=drive_link"
+      "./assets/booths/A4_1.webp",
+      "./assets/booths/A4_2.webp"
     ],
     "links": {
       "twitter": [
@@ -111,7 +115,8 @@
       "토카이 테이오"
     ],
     "images": [
-      "https://x.com/SPakkyu845/status/2025843072483946925?s=20"
+      "./assets/booths/A5_1.webp",
+      "./assets/booths/A5_2.webp"
     ],
     "links": {
       "twitter": [
@@ -132,7 +137,7 @@
       "골드쉽"
     ],
     "images": [
-      "https://x.com/i/status/2028024695023599938"
+      "./assets/booths/A6_1.webp"
     ],
     "links": {
       "twitter": [
@@ -150,7 +155,7 @@
       "슈발그랑"
     ],
     "images": [
-      "https://naver.me/GP2xEQyq"
+      "./assets/booths/A7_1.webp"
     ],
     "links": {
       "twitter": [
@@ -167,7 +172,9 @@
     "character": [
       "사쿠라 바쿠신 오"
     ],
-    "images": [],
+    "images": [
+      "./assets/booths/A8_1.webp"
+    ],
     "links": {
       "twitter": [
         "https://x.com/LookSeeWatch1"
@@ -203,7 +210,9 @@
       "메지로 맥퀸"
     ],
     "images": [
-      "https://x.com/i/status/2026938401149300901"
+      "./assets/booths/B1_1.webp",
+      "./assets/booths/B1_2.webp",
+      "./assets/booths/B1_3.webp"
     ],
     "links": {
       "twitter": [],
@@ -240,7 +249,7 @@
       "다이와 스칼렛"
     ],
     "images": [
-      "https://pbs.twimg.com/media/HB_o71laMAA-3y0?format=jpg&name=4096x4096"
+      "./assets/booths/B3_1.webp"
     ],
     "links": {
       "twitter": [
@@ -263,7 +272,7 @@
       "히시 미라클"
     ],
     "images": [
-      "https://drive.google.com/file/d/1VtC6pMNApc74tESAa_zQrRpM_g1cfd9J/view?usp=sharing"
+      "./assets/booths/B4_1.webp"
     ],
     "links": {
       "twitter": [
@@ -285,7 +294,8 @@
       "키타산블랙 등 다수"
     ],
     "images": [
-      "https://drive.google.com/drive/folders/1IMsSH0R6oDccR9gI28mn03E0l8-7A--F?usp=sharing"
+      "./assets/booths/B5_1_v2.webp",
+      "./assets/booths/B5_2_v2.webp"
     ],
     "links": {
       "twitter": [
@@ -309,7 +319,7 @@
       "다이타쿠 헬리오스"
     ],
     "images": [
-      "https://drive.google.com/file/d/17RnszECqPWdIa6whF6uHvhhsR1fIpCl-/view?usp=sharing"
+      "./assets/booths/B6_1.webp"
     ],
     "links": {
       "twitter": [],
@@ -335,7 +345,11 @@
       "페노메노"
     ],
     "images": [
-      "https://drive.google.com/drive/folders/1OKX88ezQ_DvMSrQVtEdHi_c0cUnF6QR2?usp=drive_link"
+      "./assets/booths/C1_1_r2.webp",
+      "./assets/booths/C1_2_r2.webp",
+      "./assets/booths/C1_3_r2.webp",
+      "./assets/booths/C1_4_r2.webp",
+      "./assets/booths/C1_5_r2.webp"
     ],
     "links": {
       "twitter": [
@@ -362,7 +376,10 @@
       "페노메노"
     ],
     "images": [
-      "https://x.com/_pikiju/status/2026973123766341742?s=20"
+      "./assets/booths/C2_1.webp",
+      "./assets/booths/C2_2.webp",
+      "./assets/booths/C2_3.webp",
+      "./assets/booths/C2_4.webp"
     ],
     "links": {
       "twitter": [
@@ -393,7 +410,7 @@
       "단츠 플레임"
     ],
     "images": [
-      "https://drive.google.com/drive/folders/1jFxJc4ZWeuNWgR50Ma7TeA1DZW2crpxj?usp=drive_link"
+      "./assets/booths/C3_1.webp"
     ],
     "links": {
       "twitter": [
@@ -411,7 +428,7 @@
     "info": "",
     "character": [],
     "images": [
-      "https://drive.google.com/file/d/1Uyx_xELZs1Sy7zp73aKu7eMH_jiDvDmx/view?usp=sharing"
+      "./assets/booths/C4_1.webp"
     ],
     "links": {
       "twitter": [
@@ -443,7 +460,7 @@
       "마르슈 로렌"
     ],
     "images": [
-      "https://drive.google.com/file/d/1W2zLYSu9XfdrQ5BH8p_mPlhAEU7RhjHd/view?usp=drive_link"
+      "./assets/booths/C5_1.webp"
     ],
     "links": {
       "twitter": [
@@ -471,7 +488,7 @@
       "다이와 스칼렛"
     ],
     "images": [
-      "https://drive.google.com/drive/folders/1gXNlV2RQUPRsxtA2lM9m8V5WvfdnwoR-?usp=sharing"
+      "./assets/booths/D1_1.webp"
     ],
     "links": {
       "twitter": [
@@ -489,7 +506,10 @@
     "info": "고려대학교 비공식 소모임 서클입니다! 회지 중신으로 취급하며 점점 성장해가고 있으니 많은 관심 부탁드려요~",
     "character": [],
     "images": [
-      "https://x.com/KUsobookclub/status/2027575600693772768"
+      "./assets/booths/D2_1.webp",
+      "./assets/booths/D2_2.webp",
+      "./assets/booths/D2_3.webp",
+      "./assets/booths/D2_4.webp"
     ],
     "links": {
       "twitter": [
@@ -507,7 +527,7 @@
       "러브즈 온리 유"
     ],
     "images": [
-      "https://twitter.com/Wakamiya_Erika/status/2028375933439312288?s=19"
+      "./assets/booths/D3_1.webp"
     ],
     "links": {
       "twitter": [],
@@ -523,7 +543,7 @@
       "안달루시안(우마무스메화)"
     ],
     "images": [
-      "https://drive.google.com/file/d/1VhprqTQ2-pbOwN9kBrdGfgTrjwdH0gnc/view?usp=drive_link"
+      "./assets/booths/D4_1.webp"
     ],
     "links": {
       "twitter": [
@@ -657,7 +677,16 @@
       "포에버 영"
     ],
     "images": [
-      "https://drive.google.com/drive/folders/1E9ePrxX1iYRlDLA646H3g39dfn6lzzGr?usp=drive_link"
+      "./assets/booths/D5_1.webp",
+      "./assets/booths/D5_2.webp",
+      "./assets/booths/D5_3.webp",
+      "./assets/booths/D5_4.webp",
+      "./assets/booths/D5_5.webp",
+      "./assets/booths/D5_6.webp",
+      "./assets/booths/D5_7.webp",
+      "./assets/booths/D5_8.webp",
+      "./assets/booths/D5_9.webp",
+      "./assets/booths/D5_10.webp"
     ],
     "links": {
       "twitter": [
@@ -677,7 +706,7 @@
       "카츠라기 에이스 외"
     ],
     "images": [
-      "https://drive.google.com/file/d/1dPHwhdbvPpZDzrvfnvyMgyV0P30i8rNm/view?usp=sharing"
+      "./assets/booths/E1_1.webp"
     ],
     "links": {
       "twitter": [
@@ -696,7 +725,12 @@
       "나리타탑로드"
     ],
     "images": [
-      "https://drive.google.com/drive/folders/1Jzv5CxPxjANpD9NJ-4cqO14NoG_zYeVR?usp=sharing"
+      "./assets/booths/E2_1.webp",
+      "./assets/booths/E2_2.webp",
+      "./assets/booths/E2_3.webp",
+      "./assets/booths/E2_4.webp",
+      "./assets/booths/E2_5.webp",
+      "./assets/booths/E2_6.webp"
     ],
     "links": {
       "twitter": [
@@ -724,7 +758,7 @@
       "베르시나(비르시나)"
     ],
     "images": [
-      "https://drive.google.com/file/d/1dEJ1J5WmkOTj-l82BdqSgO0EGa2V6rrB/view?usp=sharing"
+      "./assets/booths/E3_1.webp"
     ],
     "links": {
       "twitter": [
@@ -745,7 +779,7 @@
       "아그네스 타키온"
     ],
     "images": [
-      "https://x.com/2_TP_S/status/2029404291887448499?s=20"
+      "./assets/booths/E4_1.webp"
     ],
     "links": {
       "twitter": [
@@ -763,7 +797,7 @@
       "아그네스 타키온"
     ],
     "images": [
-      "https://pbs.twimg.com/media/HCqu2S9bgAAGMMA?format=jpg&name=large"
+      "./assets/booths/E5_1.webp"
     ],
     "links": {
       "twitter": [
@@ -779,7 +813,8 @@
     "info": "우마무스메 엽서, 스티커 판매합니다.",
     "character": [],
     "images": [
-      "https://x.com/iseo_cos/status/2028775509300257257/photo/1"
+      "./assets/booths/F1_1.webp",
+      "./assets/booths/F1_2.webp"
     ],
     "links": {
       "twitter": [],
@@ -806,8 +841,8 @@
       "마르슈 로렌"
     ],
     "images": [
-      "https://drive.google.com/file/d/1C2rFvqlaR0JL1rES75wgUZTni-1v_vZd/view?usp=drive_link",
-      "https://drive.google.com/file/d/19oilQ9ncTXIuHNhExw9Mgdw6VXuwk-vd/view?usp=sharing"
+      "./assets/booths/F2_1.webp",
+      "./assets/booths/F2_2.webp"
     ],
     "links": {
       "twitter": [
@@ -856,7 +891,7 @@
       "골드쉽"
     ],
     "images": [
-      "https://drive.google.com/file/d/13203IgZ3edZsZGQ2JbmQ5bw927OGQHBN/view?usp=sharing"
+      "./assets/booths/G1_1.webp"
     ],
     "links": {
       "twitter": [
@@ -877,7 +912,7 @@
       "아몬드아이"
     ],
     "images": [
-      "https://drive.google.com/file/d/1vP8o33-dctTf7xvBwP3Xfd6xZLuCj8V3/view?usp=drive_link"
+      "./assets/booths/G2_1.webp"
     ],
     "links": {
       "twitter": [
