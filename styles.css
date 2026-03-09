@@ -235,13 +235,15 @@ body {
 }
 
 .slot-witchform {
-  border-color: #2f7f50;
-  background: #dff9e9;
-  color: #0f5f31;
+  border-color: #2b58ff;
+  background: #dfe8ff;
+  color: #1134c7;
+  box-shadow: 0 0 0 2px rgba(43, 88, 255, 0.22);
 }
 
 .slot-witchform span {
-  color: #0f5f31;
+  color: #1134c7;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.85);
 }
 
 .slot-match-registered {
@@ -347,14 +349,14 @@ body {
 }
 
 .line-booth-witchform {
-  border-color: #9ecfb0;
-  background: #f1fff6;
+  border-color: #98b0ff;
+  background: #eef2ff;
 }
 
 .line-booth-witchform:hover,
 .line-booth-witchform:focus-visible {
-  border-color: #4f9d6d;
-  box-shadow: 0 6px 14px rgba(27, 117, 63, 0.16);
+  border-color: #4c75ff;
+  box-shadow: 0 6px 14px rgba(43, 88, 255, 0.2);
 }
 
 .line-tag {
@@ -366,9 +368,9 @@ body {
   border-radius: 999px;
   font-size: 11px;
   font-weight: 800;
-  color: #0e5a2e;
-  background: #d6f5e2;
-  border: 1px solid #9bd1b1;
+  color: #1230a8;
+  background: #dbe5ff;
+  border: 1px solid #94acff;
 }
 
 .booth-card {
@@ -630,21 +632,23 @@ body {
 }
 
 .witchform-link {
-  min-height: 48px;
-  padding: 12px 18px;
-  font-size: 15px;
-  border-color: #1d7a45;
-  background: #dff9e9;
-  color: #0a5a2e;
-  box-shadow: 0 6px 14px rgba(29, 122, 69, 0.2);
+  min-height: 56px;
+  padding: 14px 22px;
+  font-size: 17px;
+  font-weight: 800;
+  border-width: 2px;
+  border-color: #1f4dff;
+  background: #e6ecff;
+  color: #102fb0;
+  box-shadow: 0 8px 18px rgba(31, 77, 255, 0.24);
 }
 
 .witchform-link:hover,
 .witchform-link:focus-visible {
-  border-color: #125932;
-  background: #c8f2d8;
-  color: #094826;
-  box-shadow: 0 8px 18px rgba(29, 122, 69, 0.3);
+  border-color: #173dc9;
+  background: #d6e0ff;
+  color: #0d288f;
+  box-shadow: 0 10px 22px rgba(31, 77, 255, 0.34);
 }
 
 .social-icon {
