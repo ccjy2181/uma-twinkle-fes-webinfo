@@ -895,7 +895,8 @@
     "info": "주최측에서 직접 운영하는 레이저 각인 부스입니다.",
     "character": [],
     "images": [
-      "https://x.com/uma_twinkle_fes/status/2029965658008719620?s=20"
+      "./assets/booths/H1_1.webp",
+      "./assets/booths/H1_2.webp"
     ],
     "links": {
       "twitter": [],
