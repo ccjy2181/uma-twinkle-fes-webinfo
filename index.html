@@ -19,6 +19,26 @@
   <body>
     <div class="bg-orb orb-a" aria-hidden="true"></div>
     <div class="bg-orb orb-b" aria-hidden="true"></div>
+    <section id="replayDock" class="replay-dock" hidden aria-label="룸매치 풀영상">
+      <div class="replay-dock-inner">
+        <div class="replay-dock-header">
+          <strong>룸매치 풀영상</strong>
+          <button id="closeReplayDockBtn" type="button" class="replay-dock-close" aria-label="풀영상 닫기">
+            닫기
+          </button>
+        </div>
+        <div class="replay-dock-frame-wrap">
+          <iframe
+            id="replayFrame"
+            class="replay-dock-frame"
+            title="룸매치 풀영상"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
 
     <header class="hero">
       <div class="hero-banner" aria-hidden="true"></div>

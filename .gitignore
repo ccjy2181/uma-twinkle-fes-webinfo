@@ -5,6 +5,7 @@ booths-source.jpg
 # optional local exports
 data/booths.source.csv
 data/booths-progress.csv
+logs/
 
 # OS/editor
 .DS_Store

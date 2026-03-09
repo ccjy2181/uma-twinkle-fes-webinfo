@@ -6,6 +6,7 @@ const LAYOUT_ROWS = [
   { line: "E", start: 1, end: 5 },
   { line: "F", start: 1, end: 3 },
   { line: "G", start: 1, end: 2 },
+  { line: "H", start: 1, end: 1 },
 ];
 
 const ROW_COORDS = {
@@ -15,11 +16,21 @@ const ROW_COORDS = {
   D: { top: 39.378, left: 38.878, width: 35.048, count: 5, h: 4.378 },
   E: { top: 48.085, left: 39.784, width: 34.142, count: 5, h: 4.229 },
   F: { top: 58.259, left: 52.529, width: 21.251, count: 3, h: 3.582 },
+  // Host engraving booth: bottom-left empty area (avoid ticket exchange overlap)
+  H: { top: 88.9, left: 3.2, width: 9.2, count: 1, h: 3.8 },
 };
 
 const G_COORDS = {
   G1: { top: 58.284, left: 7.015, width: 4.385, h: 6.667 },
   G2: { top: 64.95, left: 7.015, width: 4.385, h: 6.891 },
+};
+const EVENT_REPLAY_URL = "https://www.youtube.com/watch?v=n0k60cwOFVo";
+
+const SPECIAL_CODE_ALIASES = {
+  "주최 각인": "H1",
+};
+const SPECIAL_DISPLAY_CODES = {
+  H1: "각인 부스",
 };
 const LIST_ROW_BREAK = 5;
 
@@ -29,6 +40,9 @@ const DEFAULT_INFO = "상세 소개 준비중";
 const boothGrid = document.getElementById("boothGrid");
 const boothMap = document.getElementById("boothMap");
 const searchInput = document.getElementById("searchInput");
+const replayDock = document.getElementById("replayDock");
+const replayFrame = document.getElementById("replayFrame");
+const closeReplayDockBtn = document.getElementById("closeReplayDockBtn");
 const boothModal = document.getElementById("boothModal");
 const closeModalBtn = document.getElementById("closeModalBtn");
 const modalPrevImageBtn = document.getElementById("modalPrevImageBtn");
@@ -49,6 +63,7 @@ let allBooths = [];
 let currentFilteredCodes = new Set();
 let galleryImages = [];
 let galleryIndex = 0;
+let isReplayDockOpen = false;
 
 function toCode(line, number) {
   return `${line}${number}`;
@@ -91,7 +106,9 @@ function extractUrls(value) {
 }
 
 function normalizeBooth(raw) {
-  const code = String(raw.code || "").trim().toUpperCase().replace("-", "");
+  const rawCode = String(raw.code || "").trim();
+  const aliasCode = SPECIAL_CODE_ALIASES[rawCode] || rawCode;
+  const code = String(aliasCode).trim().toUpperCase().replace("-", "");
   if (!code) {
     return null;
   }
@@ -103,6 +120,7 @@ function normalizeBooth(raw) {
 
   return {
     code,
+    displayCode: String(raw.displayCode || SPECIAL_DISPLAY_CODES[code] || code),
     name: String(raw.name || "미등록 부스"),
     info: String(raw.info || "").trim(),
     character,
@@ -211,6 +229,7 @@ async function loadBoothData() {
 function createFallbackBooth(code) {
   return {
     code,
+    displayCode: SPECIAL_DISPLAY_CODES[code] || code,
     name: "미등록 부스",
     info: DEFAULT_INFO,
     character: [],
@@ -245,7 +264,7 @@ function makeMapSlot(booth, top, left, width, height) {
   slot.style.left = `${left}%`;
   slot.style.width = `${width}%`;
   slot.style.height = `${height}%`;
-  slot.innerHTML = `<span>${booth.code}</span>`;
+  slot.innerHTML = `<span>${booth.displayCode || booth.code}</span>`;
   slot.title = booth.name;
 
   if (isUnregistered) {
@@ -273,6 +292,7 @@ function makeMapSlot(booth, top, left, width, height) {
 
 function renderMap() {
   boothMap.innerHTML = '<div class="map-reference" aria-hidden="true"></div>';
+  boothMap.append(makeEventReplayButton());
 
   Object.entries(ROW_COORDS).forEach(([line, coord]) => {
     for (let idx = 0; idx < coord.count; idx += 1) {
@@ -290,6 +310,111 @@ function renderMap() {
     const booth = boothsByCode.get(code) || createFallbackBooth(code);
     boothMap.append(makeMapSlot(booth, pos.top, pos.left, pos.width, pos.h));
   });
+}
+
+function makeEventReplayButton() {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "event-replay-btn";
+  button.setAttribute("aria-label", "룸매치 풀영상 토글");
+  button.setAttribute("aria-pressed", String(isReplayDockOpen));
+  if (isReplayDockOpen) {
+    button.classList.add("is-active");
+  }
+
+  const icon = document.createElement("img");
+  icon.className = "event-replay-icon";
+  icon.src =
+    "https://www.google.com/s2/favicons?sz=64&domain_url=https://www.youtube.com";
+  icon.alt = "유튜브 아이콘";
+  icon.width = 18;
+  icon.height = 18;
+
+  const text = document.createElement("span");
+  text.textContent = isReplayDockOpen ? "룸매치 풀영상 닫기" : "룸매치 풀영상";
+
+  const state = document.createElement("span");
+  state.className = "event-replay-external";
+  state.textContent = isReplayDockOpen ? "ON" : "";
+  state.setAttribute("aria-hidden", "true");
+
+  button.append(icon, text, state);
+  button.addEventListener("click", toggleReplayDock);
+  return button;
+}
+
+function toYoutubeEmbedUrl(url) {
+  try {
+    const parsed = new URL(url);
+    const host = parsed.hostname.toLowerCase();
+    const list = parsed.searchParams.get("list");
+    const video = parsed.searchParams.get("v");
+
+    if (host.includes("youtu.be")) {
+      const id = parsed.pathname.replace("/", "").trim();
+      if (!id) {
+        return "";
+      }
+      return `https://www.youtube.com/embed/${encodeURIComponent(id)}?rel=0`;
+    }
+
+    if (list && !video) {
+      return `https://www.youtube.com/embed/videoseries?list=${encodeURIComponent(list)}&rel=0`;
+    }
+
+    if (video) {
+      const listQuery = list ? `&list=${encodeURIComponent(list)}` : "";
+      return `https://www.youtube.com/embed/${encodeURIComponent(video)}?rel=0${listQuery}`;
+    }
+  } catch (error) {
+    return "";
+  }
+
+  return "";
+}
+
+function updateReplayDockOffset() {
+  if (!isReplayDockOpen || !replayDock) {
+    document.body.style.setProperty("--replay-dock-offset", "0px");
+    return;
+  }
+  const offset = replayDock.offsetHeight + 10;
+  document.body.style.setProperty("--replay-dock-offset", `${offset}px`);
+}
+
+function openReplayDock() {
+  const embedUrl = toYoutubeEmbedUrl(EVENT_REPLAY_URL);
+  if (!embedUrl || !replayDock || !replayFrame) {
+    return;
+  }
+
+  replayFrame.src = embedUrl;
+  replayDock.hidden = false;
+  isReplayDockOpen = true;
+  document.body.classList.add("replay-dock-open");
+  updateReplayDockOffset();
+  renderMap();
+}
+
+function closeReplayDock() {
+  if (!replayDock || !replayFrame) {
+    return;
+  }
+
+  replayDock.hidden = true;
+  replayFrame.src = "";
+  isReplayDockOpen = false;
+  document.body.classList.remove("replay-dock-open");
+  updateReplayDockOffset();
+  renderMap();
+}
+
+function toggleReplayDock() {
+  if (isReplayDockOpen) {
+    closeReplayDock();
+    return;
+  }
+  openReplayDock();
 }
 
 function renderBooths(list) {
@@ -346,7 +471,7 @@ function renderBooths(list) {
         if (hasWitchform) {
           item.classList.add("line-booth-witchform");
         }
-        item.innerHTML = `<span class="line-code">${booth.code}</span><span class="line-name">${booth.name}</span>${hasWitchform ? '<span class="line-tag">통판</span>' : ""}`;
+        item.innerHTML = `<span class="line-code">${booth.displayCode || booth.code}</span><span class="line-name">${booth.name}</span>${hasWitchform ? '<span class="line-tag">통판</span>' : ""}`;
         item.addEventListener("click", () => {
           openModal(booth);
         });
@@ -395,7 +520,7 @@ function makeLinkButton(platform, href, index = 0, total = 1) {
 }
 
 function openModal(booth) {
-  modalCode.textContent = booth.code;
+  modalCode.textContent = booth.displayCode || booth.code;
   modalName.textContent = booth.name;
   modalInfo.textContent = booth.info || DEFAULT_INFO;
 
@@ -500,6 +625,7 @@ function filterBooths(keyword) {
   const filtered = allBooths.filter((booth) => {
     const flatText = [
       booth.code,
+      booth.displayCode || "",
       booth.name,
       booth.info,
       ...booth.character,
@@ -560,5 +686,7 @@ boothModal.addEventListener("click", (event) => {
 searchInput.addEventListener("input", (event) => {
   filterBooths(event.target.value);
 });
+closeReplayDockBtn.addEventListener("click", closeReplayDock);
+window.addEventListener("resize", updateReplayDockOffset);
 
 init();
